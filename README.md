@@ -1,2 +1,2 @@
 # lulz
-Mega tool for grap all lulz. Very useful.
+Mega tool for grab all lulz. Very useful.
