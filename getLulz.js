@@ -8,8 +8,7 @@ $(function() {
 		$.getJSON('http://whateverorigin.org/get?url=' + encodeURIComponent(lulzUrl + count) + '&callback=?', function(data) {
 			if (addLulzOnPage(data.contents)) {
 				count++;
-				getLulz();
-				sleep(delayTime);
+				setTimeout(getLulz, delayTime);
 			}
 		});
 	}
@@ -30,15 +29,6 @@ $(function() {
 		
 		return false;
 	}
-	
-	function sleep(milliseconds) {
-		  var start = new Date().getTime();
-		  for (var i = 0; i < 1e7; i++) {
-			if ((new Date().getTime() - start) > milliseconds){
-			  break;
-			}
-		  }
-	}
-	
+		
 	getLulz();
 });
