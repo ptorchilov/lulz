@@ -12,14 +12,14 @@ $(function() {
 			}
 		});
 	}
-
+	
 	function addLulzOnPage(contents) {
 		var html = $.parseHTML(contents);
 		var lulz = $(html).find("div.center").text();
 		
 		if (lulz) {
 			if (lulz.indexOf(endLulzStr) === -1) {
-				$("div.lulz").append("<span>" + lulz + "</span><br/>");
+				$("div.lulz").append("<span class='text-primary'>" + lulz + "</span><br/>");
 			
 				return true;
 			}
