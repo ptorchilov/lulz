@@ -1,6 +1,6 @@
 $(function() {
     var lulzUrl = "http://adolgushin.com/otmazki/";
-    var count = 310;
+    var count = 1;
 
     var niceLulz = 0;
 
@@ -29,7 +29,7 @@ $(function() {
 
         if (lulz) {
             if (lulz.indexOf(endLulzStr) === -1) {
-                $("div.lulz").append("<span class='text-primary'>" + lulz + "</span><br/>");
+                $("div.lulz").append("<span class='mark list-group-item'>" + lulz + "</span><br/>");
                 niceLulz++;
 
                 return true;
@@ -40,7 +40,7 @@ $(function() {
     }
 
     function showStatistics(count) {
-        $("div.lulz").append("<br/><span>Всего отмазок: " + count + "</span>");
+        $("div.lulz").append("<br/><span class='mark'>Всего отмазок: " + count + "</span>");
     }
 
     getLulz();
