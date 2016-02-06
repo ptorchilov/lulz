@@ -1,0 +1,16 @@
+body.override {
+  margin: 0;
+  font-family: "Comic Sans", "Comic Sans MS", "Chalkboard", "ChalkboardSE-Regular", "Marker Felt", "Purisa", "URW Chancery L", cursive, sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffff00;
+  background-color: #0000ff;
+}
+
+body.override .mark {
+    background-color: transparent;
+}
+
+body.override .list-group-item {
+    border-color: #6f0;
+}
