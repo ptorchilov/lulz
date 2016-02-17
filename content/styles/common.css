@@ -21,7 +21,6 @@ div.yoba img {
 }
 
 .maliy-yoba {
-    margin-top: 50px;
     background: url('../img/custom/maliy-yoba.png');
     width: 18px;
     height: 18px;
@@ -33,3 +32,10 @@ div.yoba img {
     height: 200px;
 }
 
+.funny-pics-item {
+	margin-top: 50px;
+}
+
+.funny-pics-subitem {
+	margin-top: 20px;
+}
